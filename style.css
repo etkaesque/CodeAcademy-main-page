@@ -1,0 +1,339 @@
+
+:root {
+    --background-primary: rgb(255, 255, 255);
+    --background-secondary: rgb(4, 4, 15);
+    
+}
+
+body {
+    
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    margin:0;
+}
+
+
+.stats-list, .main-menu, .footer-list {
+    list-style: none;
+}
+
+.logo-wrapper {
+    margin-left: 100px;
+}
+
+.main-header {
+    background-color: var(--background-primary);
+}
+
+.main-menu {
+    
+    text-transform: uppercase;
+    
+    font-size: 14px;
+    
+    
+}
+
+.menu-item {
+    
+    display: inline-block;
+    
+}
+
+.menu-link {
+    
+    display: inline-block;
+    padding: 30px 14px;
+    text-decoration: none;
+    color:black;
+    
+}
+
+.menu-link:hover {
+    opacity: 0.8;
+}
+
+.button {
+    
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 13px 20px;
+    font-size: 10px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    border: 2px  solid blue;
+}
+
+.button:hover{
+
+    background-color: #574aff;
+    border: 2px solid #574aff;
+
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 20px;   
+    width: 40%;
+    
+}
+
+h2 {
+    font-size: 40px;
+    
+}
+
+p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+.color-wrap {
+    background-color: var(--background-secondary);
+    color: white;
+
+}
+
+.hero-box, .stats {
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    
+
+}
+.page-title-wrapper {
+    
+    padding-top: 100px;
+    padding-bottom: 250px;
+    
+}
+
+.service-item {
+    
+    padding-bottom: 35px;
+}
+
+.service-item.students {
+    border-bottom: 2px solid black;
+}
+
+.stats {
+    background-color: white;
+}
+
+
+
+.stats-value {
+    font-size: 72px;
+    
+}
+
+.stats-wrapper {
+    margin-top: 60px;
+}
+
+footer.color-wrap {
+
+    font-size: 20px;
+    font: 10px;
+    color: #929497;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+
+.footer-anchor, .policy-anchor, .footer-link {
+
+     text-decoration: none;
+
+
+}
+
+
+.footer-link, .policy-anchor {
+
+    color: #929497;
+    display: inline-block;
+}
+
+.footer-anchor {
+
+    color: white;
+}
+
+
+.footer-link:hover, .policy-anchor:hover, .footer-anchor:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-header {
+
+    font-size: 20px;
+    color:white;
+}
+
+.footer-list {
+    padding-left:0;
+}
+
+.social-media {
+    display: inline-block;
+}
+
+.media {
+    max-width: 50px;
+}
+
+.main-header {
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+ 
+}
+
+.logo-wrapper {
+    justify-self: end;
+}
+
+
+.hero-box {
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr 2fr 1fr ;
+    grid-template-rows: 2fr 1fr ;
+}
+
+
+.page-title-wrapper {
+
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+
+}
+
+.service-list {
+
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+.service-item.students {
+
+    grid-column: 1 / 2;
+  
+    /* padding: 20px 100px 20px 0px; */
+   
+
+
+
+}
+
+.service-item.bussiness {
+
+    grid-column: 2 / 3;
+    padding: 10px 0px 20px 100px;
+}
+
+.divider {
+
+    border-right: 1px solid white;
+    padding: 10px 100px 20px 0px;
+}
+
+.service-title {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.stats-list {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+}
+
+.stats-list .stats-item:nth-child(1) {
+
+    grid-column: 2 / 3;
+
+}
+
+.stats-list .stats-item:nth-child(2) {
+
+    grid-column: 3 / 4;
+} 
+.stats-list .stats-item:nth-child(3) {
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.stats-list .stats-item:nth-child(4) {
+
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.section-title {
+
+    font-size: 72px;
+}
+
+footer {
+
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr);
+}
+
+
+.footer-logo-wrapper {
+
+    grid-column: 1 / 6;
+
+    grid-row: 1 / 2;
+
+
+    align-self: center;
+}
+
+.footer-section {
+
+
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.politics {
+
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+
+}
+
+.social-media {
+
+    
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+
+}
+
